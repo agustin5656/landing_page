@@ -1,0 +1,119 @@
+
+body {
+   
+    background-image:url(imgenes/unnamed.png) ;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.landing-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('C:\Users\estudiante\Desktop\index\img\imgenes\unnamed.png') no-repeat center center fixed; 
+    background-size: cover;
+   
+    background-blend-mode: darken;
+   
+}
+
+.content {
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #bbb; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+.footer {
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    display: flex;
+    background-color: #927070;
+    color: #bbb;
+    padding: 20px 0;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: auto;
+
+}
+p{
+    color: black;
+}
+.btn {
+    background-color: #E60000;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #CC0000; 
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+    .content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    .buttons-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn {
+        width: 80%; 
+        margin: 0 auto; 
+    }
+}
+button{
+    background-color: #00e6db;
+}
